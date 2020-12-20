@@ -1,0 +1,32 @@
+Encoding
+========
+step 1: when creating frequency dictionary we are passing every element in string
+Time = O(n) : n is string length
+Space = O(n) : n is string length
+
+step 2: store frequency dictionary in priority queue (PQ)
+Time = O(n)
+Space = O(n)
+n: is the number of unique characters
+
+step 3: create Huffman tree
+we're popping least frequent character from PQ, it takes O(n) time
+and doing this 2(n-1) times
+
+Time = O(n^2)
+Space = O(n)
+n: is the number of unique characters
+
+step 3: generate dictionary of binary_codes of each character from huffman tree.
+We're passing each element once
+
+Time = O(n)
+Space = O(n)
+n: is the number of unique characters
+
+we see that big O of encoding process: O(n^2)
+
+
+Decoding: we'll pass every binary code of encoded binary string and pass to tree till we reach the leaf node to extract the letter
+========
+Time = O(n):  n is length of binary encoded string

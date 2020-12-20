@@ -1,0 +1,17 @@
+Time complexity
+===============
+For every level of the folder hierarchy we execute the for loop only for the items at that level.
+If there are total of n items (files and folders) in the file system, there's only a part of that number
+in each folder and all of the items in every folder sum up to n.
+
+Time = O(n)
+
+
+Time complexity
+===============
+we allocate a single File object for every file/folder in the current path.
+It is actually equal to the maximum depth of folder hierarchy because you keep the File objects at every level until the next
+level recursive call finishes but release them only after that. In the worst case the folder hierarchy can be O(n) deep - when
+there is only 1 subfolder and no files in each subfolder. This gives you an O(n) space complexity.
+
+Space = O(n)

@@ -1,0 +1,8 @@
+ordered dictionary used to store LRU cache, because we need to maintain order to:
+1. move cached element to end after every get and set.
+Time = O(1)
+space = O(n)
+2. keep least used element in front and pop it when length of cached elements exceeds cached size.
+Time = O(1)
+space = O(n)
+

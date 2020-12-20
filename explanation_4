@@ -1,0 +1,16 @@
+We're storing member users and groups in array.
+Adding user/groups to group is adding element to array.
+time/space = O(n)
+
+
+
+For every level of the group hierarchy we execute the for loop only for the items at that level.
+If there are total of n users/sub-group in that level, there's only a part of that number
+in each group.
+
+Time = O(n)
+
+
+we allocate a single group object for every sub-group in the current group.
+
+Space = O(n)

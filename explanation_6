@@ -1,0 +1,5 @@
+Both union and intersection are done by one passing pass of each linked list and store elements in set to maintain unique elements:
+
+Time/storage = O(n + m) = O(n)
+n is size of linked list 1
+m is size of linked list 2

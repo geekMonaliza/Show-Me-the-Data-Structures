@@ -1,0 +1,7 @@
+appending new node to blockchain:
+Time = O(1)
+Space = O(1)
+
+convert linked list to list: passing to each element in linked list and append to list
+Time = O(n)
+Space = O(n)
